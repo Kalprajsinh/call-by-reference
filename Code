@@ -1,0 +1,19 @@
+#include<stdio.h>
+void z(int*,int*);
+void main()
+
+{
+int x=5,y=7;
+z(&x,&y);
+printf("inside main\n");
+printf("X=%d y=%d\n",x, y);
+}
+
+void z(int* x, int* y)
+
+{
+*x=7;
+*y=5;
+printf("inside fun\n");
+printf ("x=%d y=%d \n",*x,*y);
+}
